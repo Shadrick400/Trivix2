@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Trivix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white font-['Poppins'] overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-xl border-b border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">T</span>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Trivix</span>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="index.html" class="flex items-center space-x-1 text-gray-300 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="home"></i>
+                            <span>Home</span>
+                        </a>
+                        <a href="discover.html" class="flex items-center space-x-1 text-gray-300 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="search"></i>
+                            <span>Discover</span>
+                        </a>
+                        <a href="upload.html" class="flex items-center space-x-1 text-gray-300 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="upload"></i>
+                            <span>Upload</span>
+                        </a>
+                        <a href="wallet.html" class="flex items-center space-x-1 text-gray-300 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="wallet"></i>
+                            <span>Wallet</span>
+                        </a>
+                        <a href="earn.html" class="flex items-center space-x-1 text-gray-300 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="coins"></i>
+                            <span>Earn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-gradient-to-r from-purple-600 to-cyan-600 px-4 py-2 rounded-lg hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105">
+                        Connect Wallet
+                    </button>
+                    <button class="md:hidden text-gray-300 hover:text-cyan-400">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Hero Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                        About Trivix
+                    </span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    We're revolutionizing the music industry by combining blockchain technology with streaming,
+                    creating a decentralized platform where artists and fans truly own and control their music experience.
+                </p>
+            </div>
+
+            <!-- Mission Section -->
+            <div class="bg-gradient-to-br from-gray-900/50 to-purple-900/30 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/20 mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+                        <p class="text-lg text-gray-300 mb-6">
+                            To democratize music ownership and create a fair ecosystem where artists receive fair compensation
+                            for their work while giving fans true ownership of the music they love.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full flex items-center justify-center">
+                                    <i data-lucide="music" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="text-gray-300">Empower artists with direct fan relationships</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full flex items-center justify-center">
+                                    <i data-lucide="users" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="text-gray-300">Give fans ownership and rewards</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full flex items-center justify-center">
+                                    <i data-lucide="globe" class="w-4 h-4 text-white"></i>
+                                </div>
+                                <span class="text-gray-300">Build a decentralized music economy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="w-full h-80 bg-gradient-to-br from-purple-600 via-cyan-600 to-pink-600 rounded-2xl flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-lucide="music" class="w-24 h-24 text-white/50 mb-4"></i>
+                                <p class="text-white/70 text-lg">Music Revolution</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Story Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Our Story</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-lucide="lightbulb" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">The Idea</h3>
+                        <p class="text-gray-400">
+                            Founded in 2024, Trivix was born from the frustration of seeing artists struggle
+                            in traditional streaming platforms while fans had no real stake in the music they loved.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-lucide="code" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">The Build</h3>
+                        <p class="text-gray-400">
+                            We assembled a team of blockchain experts, music industry veterans, and passionate
+                            developers to create a platform that puts power back in the hands of creators and fans.
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-lucide="rocket" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">The Launch</h3>
+                        <p class="text-gray-400">
+                            Today, Trivix is live and growing, with thousands of artists and fans already
+                            experiencing the future of music streaming and ownership.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Section -->
+            <div class="bg-gradient-to-br from-gray-900/50 to-cyan-900/30 backdrop-blur-xl rounded-3xl p-8 border border-cyan-500/20 mb-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Powered by Blockchain</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="shield" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Smart Contracts</h3>
+                        <p class="text-sm text-gray-400">Automated royalty distribution and transparent transactions</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="image" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">NFT Integration</h3>
+                        <p class="text-sm text-gray-400">Unique digital collectibles for exclusive music content</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-pink-600 to-purple-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="wallet" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">DeFi Features</h3>
+                        <p class="text-sm text-gray-400">Staking, yield farming, and token rewards system</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="globe" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Decentralization</h3>
+                        <p class="text-sm text-gray-400">No central authority, community-governed platform</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="user" class="w-12 h-12 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-1">Alex Chen</h3>
+                        <p class="text-sm text-gray-400 mb-3">CEO & Co-Founder</p>
+                        <p class="text-sm text-gray-500">Former Spotify executive with blockchain expertise</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="user" class="w-12 h-12 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-1">Sarah Kim</h3>
+                        <p class="text-sm text-gray-400 mb-3">CTO & Co-Founder</p>
+                        <p class="text-sm text-gray-500">Full-stack developer and smart contract specialist</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-pink-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="user" class="w-12 h-12 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-1">Marcus Johnson</h3>
+                        <p class="text-sm text-gray-400 mb-3">Head of Music</p>
+                        <p class="text-sm text-gray-500">A&R veteran with 15+ years in music industry</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i data-lucide="user" class="w-12 h-12 text-white"></i>
+                        </div>
+                        <h3 class="font-semibold mb-1">Elena Rodriguez</h3>
+                        <p class="text-sm text-gray-400 mb-3">Community Lead</p>
+                        <p class="text-sm text-gray-500">Web3 community builder and content creator</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="bg-gradient-to-br from-gray-900/50 to-purple-900/30 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/20 mb-16">
+                <h2 class="text-3xl font-bold text-center mb-12">Trivix in Numbers</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-400 mb-2">10K+</div>
+                        <p class="text-gray-400">Active Users</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-cyan-400 mb-2">5K+</div>
+                        <p class="text-gray-400">Artists</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-pink-400 mb-2">50K+</div>
+                        <p class="text-gray-400">Tracks</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-400 mb-2">$2M+</div>
+                        <p class="text-gray-400">Paid to Artists</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="text-center">
+                <h2 class="text-3xl font-bold mb-12">Our Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-xl rounded-2xl p-6 border border-purple-500/20">
+                        <h3 class="text-xl font-semibold mb-4">Transparency</h3>
+                        <p class="text-gray-400">
+                            Every transaction, royalty payment, and platform decision is visible on the blockchain.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 backdrop-blur-xl rounded-2xl p-6 border border-cyan-500/20">
+                        <h3 class="text-xl font-semibold mb-4">Fairness</h3>
+                        <p class="text-gray-400">
+                            Artists receive fair compensation, and fans get real value for their engagement.
+                        </p>
+                    </div>
+                    <div class="bg-gradient-to-br from-pink-900/30 to-purple-900/30 backdrop-blur-xl rounded-2xl p-6 border border-pink-500/20">
+                        <h3 class="text-xl font-semibold mb-4">Innovation</h3>
+                        <p class="text-gray-400">
+                            We're constantly pushing the boundaries of what's possible in music and blockchain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 backdrop-blur-xl border-t border-purple-500/20 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">T</span>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Trivix</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">The future of music streaming on the blockchain.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="discord" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Platform</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Discover Music</a></li>
+                        <li><a href="upload.html" class="hover:text-cyan-400 transition-colors">Upload Songs</a></li>
+                        <li><a href="nft-marketplace.html" class="hover:text-cyan-400 transition-colors">NFT Marketplace</a></li>
+                        <li><a href="earn.html" class="hover:text-cyan-400 transition-colors">Earn Tokens</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">API Docs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-purple-500/20 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Trivix. All rights reserved. Powered by Blockchain Technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trivix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white font-['Poppins'] overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-xl border-b border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">T</span>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Trivix</span>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="signup.html" class="text-gray-300 hover:text-cyan-400 transition-colors">Sign Up</a>
+                    <button class="md:hidden text-gray-300 hover:text-cyan-400">
+                        <i data-lucide="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="pt-24 pb-16 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Info -->
+                <div class="text-center lg:text-left">
+                    <div class="mb-8">
+                        <div class="w-20 h-20 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-2xl mx-auto lg:mx-0 mb-6 flex items-center justify-center">
+                            <i data-lucide="music" class="w-10 h-10 text-white"></i>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                            <span class="bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                                Welcome Back
+                            </span>
+                        </h1>
+                        <p class="text-xl text-gray-300 mb-8">
+                            Sign in to your Trivix account to continue your blockchain music journey
+                        </p>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-xl flex items-center justify-center">
+                                <i data-lucide="wallet" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Wallet Integration</h3>
+                                <p class="text-gray-400">Connect your crypto wallet securely</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-xl flex items-center justify-center">
+                                <i data-lucide="music" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Music Streaming</h3>
+                                <p class="text-gray-400">Access thousands of blockchain tracks</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-pink-600 to-purple-600 rounded-xl flex items-center justify-center">
+                                <i data-lucide="coins" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Earn Rewards</h3>
+                                <p class="text-gray-400">Get TRVX tokens for your activity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Login Form -->
+                <div class="bg-gradient-to-br from-gray-900/50 to-purple-900/30 backdrop-blur-xl rounded-3xl p-8 border border-purple-500/20">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold mb-2">Sign In</h2>
+                        <p class="text-gray-400">Enter your credentials to access your account</p>
+                    </div>
+
+                    <form class="space-y-6">
+                        <!-- Email -->
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email Address</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i>
+                                </div>
+                                <input type="email" placeholder="Enter your email" class="w-full pl-12 pr-4 py-4 bg-black/30 backdrop-blur-xl border border-purple-500/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300">
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Password</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <i data-lucide="lock" class="w-5 h-5 text-gray-400"></i>
+                                </div>
+                                <input type="password" placeholder="Enter your password" class="w-full pl-12 pr-12 py-4 bg-black/30 backdrop-blur-xl border border-purple-500/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/20 transition-all duration-300">
+                                <button type="button" class="absolute inset-y-0 right-0 pr-4 flex items-center">
+                                    <i data-lucide="eye" class="w-5 h-5 text-gray-400 hover:text-cyan-400 transition-colors"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Remember Me & Forgot Password -->
+                        <div class="flex items-center justify-between">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-3 w-5 h-5 text-purple-600 bg-black/30 border-purple-500/20 rounded focus:ring-purple-500/20">
+                                <span class="text-sm text-gray-300">Remember me</span>
+                            </label>
+                            <a href="#" class="text-sm text-cyan-400 hover:text-cyan-300 transition-colors">Forgot password?</a>
+                        </div>
+
+                        <!-- Sign In Button -->
+                        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-cyan-600 px-8 py-4 rounded-xl text-lg font-semibold hover:from-purple-700 hover:to-cyan-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
+                            Sign In
+                        </button>
+
+                        <!-- Divider -->
+                        <div class="relative my-8">
+                            <div class="absolute inset-0 flex items-center">
+                                <div class="w-full border-t border-gray-600"></div>
+                            </div>
+                            <div class="relative flex justify-center text-sm">
+                                <span class="px-4 bg-gray-900 text-gray-400">Or continue with</span>
+                            </div>
+                        </div>
+
+                        <!-- Wallet Connect -->
+                        <div class="space-y-3">
+                            <button type="button" class="w-full bg-gradient-to-r from-orange-500 to-red-500 px-8 py-4 rounded-xl font-semibold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105">
+                                <div class="flex items-center justify-center space-x-3">
+                                    <i data-lucide="wallet" class="w-5 h-5"></i>
+                                    <span>MetaMask</span>
+                                </div>
+                            </button>
+                            <button type="button" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-4 rounded-xl font-semibold hover:from-blue-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105">
+                                <div class="flex items-center justify-center space-x-3">
+                                    <i data-lucide="smartphone" class="w-5 h-5"></i>
+                                    <span>WalletConnect</span>
+                                </div>
+                            </button>
+                        </div>
+
+                        <!-- Sign Up Link -->
+                        <div class="text-center pt-4">
+                            <p class="text-gray-400">
+                                Don't have an account?
+                                <a href="signup.html" class="text-cyan-400 hover:text-cyan-300 transition-colors font-semibold">Sign up here</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 backdrop-blur-xl border-t border-purple-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">T</span>
+                        </div>
+                        <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Trivix</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">The future of music streaming on the blockchain.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="discord" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Platform</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Discover Music</a></li>
+                        <li><a href="upload.html" class="hover:text-cyan-400 transition-colors">Upload Songs</a></li>
+                        <li><a href="nft-marketplace.html" class="hover:text-cyan-400 transition-colors">NFT Marketplace</a></li>
+                        <li><a href="earn.html" class="hover:text-cyan-400 transition-colors">Earn Tokens</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">API Docs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-cyan-400 transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-purple-500/20 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Trivix. All rights reserved. Powered by Blockchain Technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Password visibility toggle
+        document.querySelector('button[type="button"]').addEventListener('click', function() {
+            const passwordInput = document.querySelector('input[type="password"]');
+            const eyeIcon = this.querySelector('i');
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.setAttribute('data-lucide', 'eye-off');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.setAttribute('data-lucide', 'eye');
+            }
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
